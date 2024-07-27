@@ -4,8 +4,8 @@ export default function Header() {
       <nav>
         <ul className="flex space-x-4 justify-center">
           <li>
-            <a href="#profile" className="text-white">
-              Profile
+            <a href="#about" className="text-white">
+              About me
             </a>
           </li>
           <li>
