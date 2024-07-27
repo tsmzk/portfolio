@@ -7,7 +7,7 @@ export default function AboutMe() {
         <img
           src="/images/profile.jpg"
           alt="Profile"
-          className="w-48 h-48 md:w-48 md:h-48 rounded-full mb-4 md:mb-0 md:mr-4"
+          className="w-32 h-32 md:w-48 md:h-48 rounded-full mb-4 md:mb-0 md:mr-4"
         />
         <p className="whitespace-pre-line">
           大学でプログラミングに出会い、そのままIT業界へ。
