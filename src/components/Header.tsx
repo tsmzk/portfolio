@@ -1,30 +1,22 @@
 export default function Header() {
   return (
-    <header className="bg-gray-800 p-4">
-      <nav>
-        <ul className="flex space-x-4 justify-center">
-          <li>
-            <a href="#about" className="text-white">
-              About me
-            </a>
-          </li>
-          <li>
-            <a href="#skills" className="text-white">
-              Skills
-            </a>
-          </li>
-          <li>
-            <a href="#works" className="text-white">
-              Works
-            </a>
-          </li>
-          <li>
-            <a href="#contact" className="text-white">
-              Contact
-            </a>
-          </li>
-        </ul>
-      </nav>
+    <header className="bg-gray-900 text-white fixed top-0 w-full z-20">
+      <div className="container mx-auto px-4 py-2 flex justify-center">
+        <nav className="space-x-8 text-lg flex">
+          <a href="#about" className="hover:text-gray-300">
+            About me
+          </a>
+          <a href="#skills" className="hover:text-gray-300">
+            Skills
+          </a>
+          <a href="#works" className="hover:text-gray-300">
+            Works
+          </a>
+          <a href="#contact" className="hover:text-gray-300">
+            Contact
+          </a>
+        </nav>
+      </div>
     </header>
   );
 }
