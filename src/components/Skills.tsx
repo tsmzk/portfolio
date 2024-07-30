@@ -1,6 +1,5 @@
 import { FaAws, FaDatabase, FaLaptopCode, FaServer, FaTools } from "react-icons/fa";
 import { v4 as uuid } from "uuid";
-import Section from "./Section";
 import SkillCard from "./SkillCard";
 
 export default function Skills() {
@@ -85,20 +84,18 @@ export default function Skills() {
   ];
 
   return (
-    <Section id="skills" title="Skills">
-      <div className="flex flex-wrap justify-center gap-4">
-        {skillCards.map((card) => (
-          <div key={uuid()} className="w-full md:w-1/2 lg:w-1/3 flex justify-center">
-            <SkillCard
-              title={card.title}
-              description={card.description}
-              skills={card.skills}
-              icon={card.icon}
-              columnName={card.columnName}
-            />
-          </div>
-        ))}
-      </div>
-    </Section>
+    <div className="flex flex-wrap justify-center gap-4">
+      {skillCards.map((card) => (
+        <div key={uuid()} className="w-full md:w-1/2 lg:w-1/3 flex justify-center">
+          <SkillCard
+            title={card.title}
+            description={card.description}
+            skills={card.skills}
+            icon={card.icon}
+            columnName={card.columnName}
+          />
+        </div>
+      ))}
+    </div>
   );
 }

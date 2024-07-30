@@ -1,4 +1,3 @@
-import Section from "./Section";
 import WorkCard from "./WorkCard";
 
 export default function Works() {
@@ -47,19 +46,17 @@ export default function Works() {
   ];
 
   return (
-    <Section id="works" title="Works">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {works.map((work) => (
-          <WorkCard
-            key={work.title}
-            title={work.title}
-            description={work.description}
-            imageUrl={work.imageUrl}
-            technologies={work.technologies}
-            links={work.links}
-          />
-        ))}
-      </div>
-    </Section>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {works.map((work) => (
+        <WorkCard
+          key={work.title}
+          title={work.title}
+          description={work.description}
+          imageUrl={work.imageUrl}
+          technologies={work.technologies}
+          links={work.links}
+        />
+      ))}
+    </div>
   );
 }
