@@ -1,9 +1,13 @@
+import Image from "next/image";
+
 export default function AboutMe() {
   return (
     <div className="flex flex-col items-center">
-      <img
+      <Image
         src="/images/profile.jpg"
         alt="Profile"
+        width={100}
+        height={100}
         className="w-32 h-32 md:w-48 md:h-48 rounded-full mb-4"
       />
       <div className="max-w-3xl mx-auto">

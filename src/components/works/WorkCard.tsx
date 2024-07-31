@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface WorkCardProps {
   title: string;
   description: string;
@@ -16,7 +18,13 @@ export default function WorkCard({
   return (
     <div className="border p-4 rounded-lg shadow-md h-full flex flex-col justify-between">
       <div className="flex justify-center items-center h-64">
-        <img src={imageUrl} alt={title} className="max-h-full object-contain" />
+        <Image
+          src={imageUrl}
+          alt={title}
+          width={500}
+          height={500}
+          className="max-h-full object-contain"
+        />
       </div>
       <div className="mt-4 flex flex-col flex-grow">
         <h3 className="text-xl font-bold mb-2">{title}</h3>
