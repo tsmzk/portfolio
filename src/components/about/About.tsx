@@ -1,10 +1,11 @@
+import { BASE_PATH } from "@/app/const";
 import Image from "next/image";
 
 export default function AboutMe() {
   return (
     <div className="flex flex-col items-center">
       <Image
-        src="/images/profile.jpg"
+        src={`${BASE_PATH}/images/profile.jpg`}
         alt="Profile"
         width={100}
         height={100}
