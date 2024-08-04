@@ -84,7 +84,7 @@ export default function Skills() {
   ];
 
   return (
-    <div className="flex flex-wrap justify-center gap-4">
+    <div className="flex flex-wrap justify-center gap-8">
       {skillCards.map((card) => (
         <div key={uuid()} className="w-full md:w-1/2 lg:w-1/3 flex justify-center">
           <SkillCard
